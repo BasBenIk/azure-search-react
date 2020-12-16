@@ -1,6 +1,4 @@
 import React from 'react';
-// import { isCompositeComponent } from 'react-dom/test-utils';
-import ReactHtmlParser from 'react-html-parser';
 
 import './Result.css';
 

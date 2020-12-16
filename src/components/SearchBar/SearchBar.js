@@ -90,7 +90,7 @@ export default function SearchBar(props) {
                     <button className="btn btn-primary rounded-0" type="submit" onClick={onSearchHandler} style={{"margin-right": "2px"}}>
                         Search
                     </button>
-                    <a target="_blank" href="https://nu.nl" className="btn btn-primary rounded-0">I'm feeling lucky</a>
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.hollandcasino.nl/" className="btn btn-primary rounded-0">I'm feeling lucky</a>
                 </div>
             </div>
         </div>

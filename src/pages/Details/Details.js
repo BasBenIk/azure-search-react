@@ -12,7 +12,7 @@ export default function Details() {
 
   let { id } = useParams();
   const [document, setDocument] = useState({});
-  const [selectedTab, setTab] = useState(0);
+  const [selectedTab] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -31,10 +31,6 @@ export default function Details() {
 
   }, [id]);
 
-  // View default is loading with no active tab
-  let detailsBody = (<CircularProgress />),
-      resultStyle = "nav-link",
-      rawStyle    = "nav-link";
 
   if (!isLoading && document) {
     // View result
