@@ -5,7 +5,7 @@ div.container a.input-group-btn {
 .suggestions {
     position: relative;
     display: inline-block;
-    width: inherit;
+    width: 70%;
     z-index:99
 }
 

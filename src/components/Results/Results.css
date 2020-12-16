@@ -1,4 +1,4 @@
-/* Detail Styles */
+/* Detail Styles
 .results-info {
     margin: 1em;
 }
@@ -11,9 +11,30 @@
     margin: auto;
     margin-left: 0em;
     margin-right: 0em;
+} */
+
+/* .results .result {
+    width: 10rem;
+    max-height: 18rem; */
+/* } */
+
+/* Detail Styles */
+.result-item {
+    margin-bottom: 2em;
+    text-align:center;
+}
+.result-item-image {
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 300px;
 }
 
-.results .result {
-    width: 10rem;
-    max-height: 18rem;
+.Results {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-left: 0em;
+    margin-right: 0em;
 }

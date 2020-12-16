@@ -4,6 +4,8 @@ import Rating from '@material-ui/lab/Rating';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import axios from 'axios';
 
+import ReactMarkdown from "react-markdown";
+
 import "./Details.css";
 
 export default function Details() {
@@ -65,14 +67,8 @@ export default function Details() {
 
   return (
     <main className="main main--details container fluid">
-      <div className="card text-center result-container">
-        <div className="card-header">
-          <ul className="nav nav-tabs card-header-tabs">
-              <li className="nav-item"><button className={resultStyle} onClick={() => setTab(0)}>Result</button></li>
-              <li className="nav-item"><button className={rawStyle} onClick={() => setTab(1)}>Raw Data</button></li>
-          </ul>
-        </div>
-        {detailsBody}
+      <div className="card result-container">
+        <ReactMarkdown source={ document.content } />
       </div>
     </main>
   );

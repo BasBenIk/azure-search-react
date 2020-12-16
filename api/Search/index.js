@@ -16,7 +16,7 @@ const createFilterExpression = (filterList, facets) => {
     let i = 0;
     let filterExpressions = [];
 
-    while (i < filterList.length) {        
+    while (i < filterList.length) {
         let field = filterList[i].field;
         let value = filterList[i].value;
 
@@ -32,7 +32,7 @@ const createFilterExpression = (filterList, facets) => {
 }
 
 // reads in facets and gets type
-// array facets should include a * at the end 
+// array facets should include a * at the end
 // this is used to properly create filters
 const readFacets = (facetString) => {
     let facets = facetString.split(",");
@@ -59,7 +59,7 @@ module.exports = async function (context, req) {
         const skip = (req.query.skip || (req.body && req.body.skip));
         const filters = (req.query.filters || (req.body && req.body.filters));
         const facets = readFacets(process.env["SearchFacets"]);
-        
+
 
         // If search term is empty, search everything
         if (!q || q === "") {

@@ -6,8 +6,8 @@ import "./Results.css";
 export default function Results(props) {
 
   let results = props.documents.map((result, index) => {
-    return <Result 
-        key={index} 
+    return <Result
+        key={index}
         document={result.document}
       />;
   });
@@ -17,8 +17,8 @@ export default function Results(props) {
 
   return (
     <div>
-      <p className="results-info">Showing {beginDocNumber}-{endDocNumber} of {props.count.toLocaleString()} results</p>
-      <div className="row row-cols-md-5 results">
+      <p className="results-info">Showing {beginDocNumber}-{endDocNumber} of {props.count.toLocaleString()} awesome results</p>
+      <div className="row results">
         {results}
       </div>
     </div>
