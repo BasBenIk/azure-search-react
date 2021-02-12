@@ -54,7 +54,7 @@ export default function Result(props) {
                     <h6 className="title-style">{decodedStringAtoB}</h6>
                 </div>
             <a href={`/details/${props.document.url}`}>
-                <p style={uriStyle}>${props.document.url}</p>
+                <p style={uriStyle}>{props.document.url}</p>
             </a>
             <p style={pStyle}>
                 {props.document.content.substring(0, 500)}
