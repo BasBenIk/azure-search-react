@@ -50,12 +50,12 @@ export default function Result(props) {
     console.log('base64ToString', decodedStringAtoB)
     return (
         <div className="result row" style={cardStyle}>
-            <a href={`/details/${props.document.metadata_storage_path}`}>
                 <div style={bodyStyle}>
-                    <h6 className="title-style">{props.document.url}</h6>
+                    <h6 className="title-style">{decodedStringAtoB}</h6>
                 </div>
+            <a href={`/details/${props.document.url}`}>
+                <p style={uriStyle}>${props.document.url}</p>
             </a>
-            <p style={uriStyle}>{decodedStringAtoB}</p>
             <p style={pStyle}>
                 {props.document.content.substring(0, 500)}
             </p>
