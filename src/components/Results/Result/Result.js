@@ -53,7 +53,7 @@ export default function Result(props) {
                 <div style={bodyStyle}>
                     <h6 className="title-style">{decodedStringAtoB}</h6>
                 </div>
-            <a href={`/details/${props.document.url}`}>
+            <a href={props.document.url}>
                 <p style={uriStyle}>{props.document.url}</p>
             </a>
             <p style={pStyle}>
