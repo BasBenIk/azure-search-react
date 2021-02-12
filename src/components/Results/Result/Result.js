@@ -46,12 +46,12 @@ export default function Result(props) {
     
     return (
         <div className="result row" style={cardStyle}>
+             <a href={props.document.url}>
                 <div style={bodyStyle}>
-                    <h6 className="title-style">{props.document.title}</h6>
+                    <h4 className="title-style">{props.document.title}</h4>
                 </div>
-            <a href={props.document.url}>
-                <p style={uriStyle}>{props.document.url}</p>
             </a>
+            <p style={uriStyle}>{props.document.url}</p>
             <p style={pStyle}>
                 {props.document.content.substring(0, 500)}
             </p>
