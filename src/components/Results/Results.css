@@ -33,12 +33,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     margin: auto;
     margin-left: 0em;
     margin-right: 0em;
 }
 
-.row {
-    width: 60%;
-}
