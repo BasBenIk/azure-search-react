@@ -43,15 +43,11 @@ export default function Result(props) {
         whiteSpace: 'nowrap',
         overflow: 'hidden'
     };
-    // let base64ToString = Buffer.from(props.document.metadata_storage_path, "base64").toString();
-    // base64ToString = JSON.parse(base64ToString);
-    const norbi = props.document.metadata_storage_path.slice(0, -1)
-    let decodedStringAtoB = atob(norbi);
-    console.log('base64ToString', decodedStringAtoB)
+    
     return (
         <div className="result row" style={cardStyle}>
                 <div style={bodyStyle}>
-                    <h6 className="title-style">{decodedStringAtoB}</h6>
+                    <h6 className="title-style">{props.document.title}</h6>
                 </div>
             <a href={props.document.url}>
                 <p style={uriStyle}>{props.document.url}</p>
